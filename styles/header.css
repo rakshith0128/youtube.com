@@ -1,0 +1,179 @@
+.hamburger-menu{
+    height:24px;
+    margin-left: 24px;
+}
+.youtube-logo{
+    height:20px;
+    
+    padding-left: 25px;
+}
+.header{
+    height:55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position:fixed;
+    top:0px;
+    left:0px;
+    right:0px;
+    background-color: white;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(243, 237, 237);
+    z-index: 10;
+}
+.left-section{
+    
+   
+    display:flex;
+    align-items: center;
+    max-width:300px;
+
+}
+.middle-section{
+
+    display:flex;
+  
+    align-items: center;
+    flex:1;
+    margin-left: 70px;
+    margin-right: 35px;
+    max-width: 500px;
+}
+.right-section{
+   
+    width: 180px;
+    display:flex;
+    align-items: center;
+ 
+    justify-content: space-between;
+    margin-right:15px;
+    flex-shrink: 0;
+}
+input[type ="text"]
+{
+    padding-left: 10px;
+}
+.searchbar{
+    width:0;
+    height:31px;
+    flex:1; 
+    font-size: 16px;
+    /* border-width: 1px; 
+    border-style: solid;
+    border-color: gray; */
+    border: 1px solid gray ;
+    border-radius: 2px;
+    box-shadow: inset 1px 2px  3cqi rgba(0, 0 , 0,0.015);
+   
+
+
+}
+.searchbar::placeholder{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    
+}
+.mike{
+    height:20px;
+}
+.mike-button{
+
+    height:40px;
+    width:40px;
+    border-radius:50%;
+    border:none;
+   background-color:rgb(240,240,240);
+    
+    
+}
+.search-button{
+    height: 35px;
+    width: 66px;
+    background-color: rgb(240,240,240);
+    border-width: 1px;
+    border-style:solid;
+    border-color:gray;
+    margin-left: -1px;
+    border-radius: 1px;
+    margin-right: 10px;
+    position: relative;
+}
+.search-icon{
+    height:25px;
+
+}
+.upload-icon{
+    height:24px;
+}
+.youtube-apps-icon{
+    height:24px;
+
+}
+.youtube-notification-icon{
+    height:24px;
+}
+.notifications-icon-container{
+    position:relative;
+}
+.notifications-count{
+    position:absolute;
+    top:-2px;
+    right:-5px;
+    background-color: rgb(195, 20, 20);
+    color:white;
+    font-family: roboto,Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    padding: 3px;
+    padding-bottom: 2px;
+    border-radius: 50%;
+}
+.current-profile-pic{
+    height:32px;
+    border-radius: 16px;;
+}
+.search-button .tooltip,
+.mike-button .tooltip,
+.upload-icon-container .tooltip,
+.youtube-apps-container .tooltip,
+.notifications-icon-hover-container .tooltip
+{
+
+        position: absolute;
+        background-color: gray;
+        color: white;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        padding-left: 6px;
+        padding-right: 6px;
+        border-radius: 2px;
+        font-size: 12px;
+        bottom: -30px;
+      
+        opacity: 0;
+        transition: opacity 0.15s;
+        pointer-events: none;
+        white-space: nowrap ;
+
+    }
+.search-button:hover .tooltip,
+.mike-button:hover .tooltip,
+.upload-icon-container:hover .tooltip,
+.youtube-apps-container:hover .tooltip,
+.notifications-icon-hover-container:hover .tooltip
+{
+
+    opacity: 1;
+}
+.search-button,
+.mike-button,
+.upload-icon-container,
+.youtube-apps-container,
+.notifications-icon-hover-container
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
